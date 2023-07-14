@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<script language="javascript" type="text/javascript" src="../static/front_end.js"></script>
+    <link rel="stylesheet" href="../static/css/about.css">
+    <link rel="stylesheet" href="../static/css/search.css">
+    <link rel="stylesheet" href="../static/css/stats.css">
+</head>
+
+
+<!-- nav bar -->
+<nav class="navbar">
+    <div class="container">
+      <p class="logo">
+        <span>MOOC Corpus Analysis : </span>
+        <span class="coral"> MIT OpenCourseWare</span>
+      </p>
+      <ul class="nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="search-by-title.html" class='active-page'>Search by Title</a></li>
+        <li><a href="search-by-author.html">Search by Author</a></li>
+        <li><a href="statistics.html">Statistics</a></li>
+      </ul>
+  </div>
+  </nav>
+<!-- nav bar -->
+
+
+<!--  search -->
+<div class="search">
+    <form name='search-form' id='form'>
+      <div class="wrapper">
+        <h1 style="color: white">Search by <span style="color: #f55b5c;">Title</span></h1>
+		  <ul style="margin-top: 40px;">
+			  <li style="display:inline; padding-left:5px; padding-right:110px;">Course Topic</li>
+			  <li style="display:inline; padding-right: 75px;">Type of Readings</li>
+			  <li style="display:inline">Readings to Include</li>
+		  </ul>
+        <div class="search-container">
+            <select name="topicselection">
+              {% for topic in topic_options %}
+                  <option value="{{ topic }}">{{ topic }}</option>
+              {% endfor %}
+            </select>
+          <select name="formatselection">
+			  <option value="All">All</option>
+            <option value="Book">Book</option>
+            <option value="Academic Paper">Academic Paper</option>
+          </select>
+          <select name="includeselection">
+            <option value="All">All</option>
+            <option value="Required">Required</option>
+            <option value="Optional">Optional</option>
+          </select>
+          <button id='searchbtn' type="button" onclick="search_by_title()" class="button">Search &raquo;</button>
+        </div>
+      </div>
+    </form>
+</div>
+    
+	
+<div class="search" style="width: 100%; background-color: white; margin: 0px; padding: 0px;">
+	<div class="search" style="width: 100%; margin: 0px; padding: 0px;">
+        <div id="flex-container" class="flex-container" style="width=100%; margin-top: 20px; padding-top: 20px;">
+			<p align="center" style="font-size: 25px; margin-top:30px">Waiting for search ...</p>
+			<p align="center"><img src="../static/img/search-wait.png" width=400px style="align-self: right;" /></p>
+		</div>
+	</div>
+</div>
+    
+<!--  search -->
+
+
+
+</html>

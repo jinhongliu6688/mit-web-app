@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap");
+
+/* start_of_hero_program_intro_page */
+:root {
+  --primary-color: #041434;
+  --secondary-color: #f55b5c;
+  --light-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #041434;
+}
+
+.light {
+  color: var(--light-color);
+}
+
+.coral {
+  color: var(--secondary-color);
+}
+
+
+h1 {
+  font-size: 2em;
+  font-weight: 1000;
+  line-height: 1;
+  color: var(--secondary-color);
+}
+
+
+a {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+#rcorners {
+  border-radius: 25px;
+  border: 5px solid var(--secondary-color);
+  padding: 20px;
+}
+
+
+
+/* showcase section */
+
+.section-showcase {
+  margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+
+.section-showcase .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: left;
+  justify-content: left;
+	text-align: left;
+  padding-top: 100px;
+  padding-bottom: 60px;
+padding-left: 50px;
+	padding-right:50px;
+}
+
+.section-showcase h1 {
+  font-size: 4rem;
+  color: var(--secondary-color);
+}
+
+
+.section-showcase img {
+  display: block;
+  margin: auto;
+}
+
+
+
+/* large text section */
+
+
+.section-large-text {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+}
+
+.section-large-text-inner {
+  color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+  margin: auto;
+  max-width: 780px;
+  padding: 5rem 0;
+}
+
+.section-large-text-inner h2 {
+  font-size: 4rem;
+}
+
+.section-large-text-inner h3 {
+  font-size: 25px;
+}
+
+.section-large-text-inner p {
+  font-size: 1.2rem;
+	margin-left: 25px;
+  margin-top: 2rem;
+}
+
+.section-large-text-inner img{
+  width: 100%;
+  display: block;
+}
+
+
+/* navbar */
+.navbar {
+  font-size: 1.2rem;
+	background-color: var(--primary-color);
+	position:fixed;
+	top: 0;
+  	padding: 2rem 0.5rem;
+	padding-left: 40px;
+	width: 100%;
+	
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 11px;
+  text-decoration: none;
+}
+
+
+.navbar .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+.navbar ul {
+  display: flex;
+  justify-self: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar a {
+  padding: 0 1rem;
+}
+
+a.active-page, a:hover {
+  color: var(--secondary-color);
+}
+/* end_of_hero_program_intro_page */
+
+
+/* buttons */
+.btn {
+  height: 55px;
+  margin-top: 30px;
+  display: inline-block;
+  color: var(--primary-color);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 12.5px;
+}
+
+#title{
+  margin-left: 1%;
+  background-color: transparent;
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  border-style: solid;
+  
+}
+#title:hover{
+    background-color: var(--light-color);
+    border-color: var(--light-color);
+  }
+
+#author{
+  background-color: transparent;
+  margin-left: 3%;
+  color: var(--light-color);
+  border-color: var(--light-color);
+  border-style: solid;
+}
+
+#author:hover{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* end of buttons */ 

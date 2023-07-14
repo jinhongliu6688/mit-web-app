@@ -1,0 +1,50 @@
+.stats {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+
+}
+
+.stats-inner {
+  color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+	margin: auto;
+  margin-top: 50px;
+  max-width: 800px;
+  padding: 5rem 0;
+}
+
+.stats-inner h2 {
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.stats-inner h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+
+.stats-inner p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.stats-inner img{
+  width: 100%;
+  display: block;
+}
+
+
+
+#rcorners {
+  border-radius: 25px;
+  border: 5px solid var(--secondary-color);
+  padding: 20px;
+}
+
+
