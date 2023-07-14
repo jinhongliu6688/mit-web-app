@@ -1,1 +1,1 @@
-web: uvicorn main:app --reload
+web: python main.py runserver 0.0.0.0:9999
