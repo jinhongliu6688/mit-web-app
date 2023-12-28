@@ -50,7 +50,8 @@ def search_readings(TOPIC, FORMAT, INCLUDE):
     title_df['Link to Course'] = title_df.Course.apply(lambda x: index_to_link[str(x)])
     title_df = title_df.drop(columns=['Type', 'author_individual', 'Course', 'Topics'])
     title_df = pd.DataFrame(title_df.value_counts()).reset_index()
-    title_df = title_df.drop(columns=['Category', 'count'])
+    title_df = title_df.drop(columns=['Category', 0])
+    # title_df = title_df.drop(columns=['Category', 'count'])
 
     return (num_readings, num_courses), title_df
 
